@@ -1,0 +1,26 @@
+<form action="" class="col-md-4 offset-4 mt-4 card cardbody" #form="ngForm" (ngSubmit)="form2Data(form)">
+<h1 class="text-center bg-info text-white">Candidate</h1>
+<div class="form-group">
+<input type="text" name="candname" id="candname" class="form-control" placeholder="Candidate Name" #candname="ngModel" ngModel>
+</div>
+<div class="form-group">
+    <input type="number" name="candyear" id="candyear" class="form-control" placeholder="Year Of Experience" #candyear="ngModel" ngModel>
+</div>
+<p>Skills<p>
+<label>
+<span>
+<input type="radio" value="java" name="java" #java="ngModel" ngModel>
+Java
+<input type="radio" value="angular" name="java"#java="ngModel" ngModel>
+Angular
+<input type="radio" value="sql" name="java"#java="ngModel" ngModel>
+SQL
+<input type="radio" value="db" name="java"#java="ngModel" ngModel>
+DB
+</span>
+</label>
+<div class="form-group">
+    <input type="text" name="cctc" id="cctc" class="form-control"#cctc="ngModel" ngModel placeholder="CCTC">
+</div>
+<button type="submit" class="btn-outline-info float-left">Schedule Interview</button>
+</form>

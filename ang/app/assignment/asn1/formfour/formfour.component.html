@@ -1,0 +1,20 @@
+<form action="" class="col-md-4 offset-4 mt-5 card cardbody"#form="ngForm"(ngSubmit)="loginData(form)">
+    <h1 class="text-center bg-dark text-white">Product</h1>
+    <div class="form-group">
+       <input type="ProductName" id="ProductName" name="ProductName" class="form-control" placeholder="Product Name"#ProductName="ngModel" ngModel>
+    </div>
+    <div class="form-group">
+        <input type="number" id="ProductNumber" name="ProductNumber" class="form-control" placeholder="Product Price"#ProductPrice="ngModel"ngModel>
+    </div>
+    <div class="form-group">
+        <input type="number" id="ProductNumber" name="ProductNumber" class="form-control" placeholder="Product Price"#ProductNumber="ngModel"ngModel>
+    </div>
+    <div class="form-group">
+        <input type="text" id="ProductDescription" name="ProductDescription" class="form-control" placeholder="Product Description"#ProductDescription="ngModel" ngModel>
+    </div>
+    <div class="form-group">
+        <input type="url" id="ProductImageUrl" name="ProductImageUrl" class="form-control" placeholder="Product Image Url">
+    </div>
+    
+    <button type="submit" class="btn-outline-dark float-right">Add Product</button>
+</form>
