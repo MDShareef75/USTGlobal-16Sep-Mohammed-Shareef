@@ -1,0 +1,40 @@
+<h1 [innerText]="name"></h1>
+<img [src]="imgUrl" alt="" [class.rounded-circle]="isActive">
+<br>
+<h2 [style.color] = "colorName" [class.bg-dark] = "isActive" [class.bg-primary] = "!isActive">{{address}}</h2>
+
+<table class = "table table-dark table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th [attr.colspan] = "colSpanValue">Contact Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>shareef</td>
+            <td>22</td>
+            <td>9945546164</td>
+            <td>9448597454</td>
+        </tr>
+        <tr>
+            <td>faizan</td>
+            <td>21</td>
+            <td>9875784364</td>
+            <td>8646262454</td>
+        </tr>
+        <tr>
+            <td>lochan</td>
+            <td>23</td>
+            <td>7645436164</td>
+            <td>9785647454</td>
+        </tr>
+        <tr>
+            <td>amith</td>
+            <td>22</td>
+            <td>8745454654</td>
+            <td>9478647435</td>
+        </tr>
+    </tbody>
+</table>
