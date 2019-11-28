@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+
+
+	<bean autowire="byName" class="com.ust.springcore.di.Book"
+		id="book">
+
+		<property value="Java" name="name" />
+		<property value="1200" name="price" />
+		<property name="author" ref="author" />
+
+	</bean>
+
+
+	<bean class="com.ust.springcore.di.Author" id="author">
+
+		<property value="james" name="name" />
+		<property value="Brite" name="penName" />
+
+	</bean>
+
+
+	<bean class="com.ust.springcore.di.Author" id="author1">
+
+		<property value="Ram" name="name" />
+		<property value="Brite" name="penName" />
+
+	</bean>
+
+</beans>
